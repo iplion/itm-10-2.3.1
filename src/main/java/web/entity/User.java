@@ -2,7 +2,7 @@ package web.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
