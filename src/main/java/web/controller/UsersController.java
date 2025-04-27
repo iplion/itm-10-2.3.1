@@ -44,7 +44,6 @@ public class UsersController {
 
     @PostMapping("/users")
     public String saveUser(@ModelAttribute User user) {
-        System.out.println("SAVEEE");
         userService.save(user);
 
         return "redirect:/users";
@@ -52,7 +51,6 @@ public class UsersController {
 
     @DeleteMapping("/users/{uuid}")
     public String deleteUser(@PathVariable UUID uuid) {
-        System.out.println("DEEEEEELEEEEETEEEEEEEEEEE");
         userService.deleteByUuid(uuid);
 
         return "redirect:/users";
@@ -60,7 +58,6 @@ public class UsersController {
 
     @PutMapping("/users")
     public String updateUser(@ModelAttribute User user) {
-        System.out.println("PUTTTTTTTTTTTTTTTTTTTTTTTT");
         userService.save(user);
 
         return "redirect:/users";
